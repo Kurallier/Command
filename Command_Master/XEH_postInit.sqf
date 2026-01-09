@@ -76,10 +76,10 @@ if (isClass (configFile >> "cfgPatches" >> "tfar_core")) then
 				<font size='18'> Gator Eight Command LR: </font><font size='18' color='#FA1414'> 50 (Plt) Mhz</font><br/>
 				<font size='18'> Gator Eight SR: </font><font size='18' color='#FA1414'> 52 Mhz</font><br/>
 				<br/><br/>
-				<font size='18'> Foehammer Command LR: </font><font size='18' color='#FA1414'> 50 (Plt) Mhz</font><br/>
-				<font size='18'> Foehammer SR: </font><font size='18' color='#FA1414'> 53 Mhz</font><br/>
+				<font size='18'> Bastion Command LR: </font><font size='18' color='#FA1414'> 50 (Plt) / 70 (JTAC) Mhz</font><br/>
 				<font size='18'> Hammer SR: </font><font size='18' color='#FA1414'> 53 Mhz</font><br/>
 				<font size='18'> Anvil SR: </font><font size='18' color='#FA1414'> 53 Mhz</font><br/>
+				<font size='18'> Crucible SR: </font><font size='18' color='#FA1414'> 53 Mhz</font><br/>
 				<br/><br/>
 				<font size='18'> Haven Command LR: </font><font size='18' color='#FA1414'> 60 (Coy) Mhz</font><br/>
 				<font size='18'> Haven LR: </font><font size='18' color='#FA1414'> 80 (Air) / 70 (JTAC) Mhz</font><br/>
@@ -133,7 +133,7 @@ player createDiaryRecord
 			<br/><br/>
 			<font size='18' color='#A85EFF'> ' Angels ': Platoon Medics </font><br/>
 			<br/><br/>
-			<font size='18' color='#A85EFF'> ' Foehammer ': Armored Unit // Gator-8 </font><br/>
+			<font size='18' color='#A85EFF'> ' Bastion ': Armored Unit </font><br/>
 			<br/><br/>
 			<font size='18' color='#A85EFF'> ' Haven ': Air HQ </font><br/>
 			<br/><br/>
@@ -206,8 +206,8 @@ player createDiaryRecord
 			<font size='18' color='#A85EFF'> Infantry </font><br/>
 				Click on heads. Stabilize your teammates if necessary, but prioritize shooting what shot them. <br/>
 			<br/>
-			<font size='18' color='#A85EFF'> Foehammer (Hammer+Anvil) </font><br/>
-				Provides a ring of steel for Gator-8, supposedly. <br/>
+			<font size='18' color='#A85EFF'> Bastion (Hammer+Anvil+Crucible) </font><br/>
+				Provides a ring of steel for Infantry, supposedly. <br/>
 			<br/>
 			<font size='18' color='#A85EFF'> Haven </font><br/>
 				Provide cinematic CAS (and sometimes transport) for ground teams. <br/>
