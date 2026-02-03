@@ -51,7 +51,9 @@ class CfgPatches
 			"Command_BallisticMask_Jules",
 			"Command_BallisticMask_Outbreak",
 			"Command_BallisticMask_Peasant",
-			"Command_BallisticMask_Andre"
+			"Command_BallisticMask_Andre",
+			"Command_BallisticMask_Ace",
+			"Command_BallisticMask_Hunter"
 		};
 		requiredAddons[]=
 		{
@@ -534,7 +536,7 @@ class CfgWeapons
 		displayName="[CMD] Ballistic Mask - Winnie the Pooh";
 		hiddenSelectionsTextures[]={"Command_Master\AOT\CommandData\Data\Pooh.paa"};
 	};
-	class Command_BallisticMask_Goofy: Command_BallisticMask_base // Mickey Mouse
+	class Command_BallisticMask_Goofy: Command_BallisticMask_base // Goofy
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -547,5 +549,19 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[CMD] Ballistic Mask - Donald Duck";
 		hiddenSelectionsTextures[]={"Command_Master\AOT\CommandData\Data\Mickey.paa"};
+	};
+	class Command_BallisticMask_Ace: Command_BallisticMask_base // Donald Duck
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[CMD] Ballistic Mask - Ace";
+		hiddenSelectionsTextures[]={"Command_Master\AOT\CommandData\Data\Ace.paa"};
+	};
+	class Command_BallisticMask_Hunter: Command_BallisticMask_base // Donald Duck
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[CMD] Ballistic Mask - PlaHunter";
+		hiddenSelectionsTextures[]={"Command_Master\AOT\CommandData\Data\Hunter.paa"};
 	};
 };
