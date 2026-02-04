@@ -4,12 +4,11 @@ https://discord.gg/6zaYE4eaEw
 
 ## How to build into a mod. 
 
-- Download and make the Command_ folders into pbos. 
+- Download and make all the "Command_XX" folders into pbos. 
 - Put pbos into a mod. 
 
 ## Questions?
 If you have questions about how to add to the mod folders, create an issue and I will assist you. 
-
 
 ## Updates to this repo
 This repo is synced so when I make changes to the physical modding folder on my project drive, this will take directly from that source folder. <br>

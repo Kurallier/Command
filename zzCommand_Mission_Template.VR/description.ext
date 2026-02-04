@@ -1,0 +1,47 @@
+//Defines Mission Settings (https://community.bistudio.com/wiki/Description.ext)
+//*Respawn Script may cause EDEN loadouts to not work properly
+
+respawn = "BASE";									//Sets Respawn Location (https://community.bistudio.com/wiki/Arma_3_Respawn)
+respawnDelay = 5;									//Sets Respawn Delay Time
+respawnVehicleDelay = 30;							//Sets Vehicle Respawn Delay Time (If Vehicle Respawn Module is being used)
+respawnTemplatesWest[] = {"Base"};					//Sets respawn type for this specific side. "Base" works with map markers that use respawn_west. "MenuPosition" works with the respawn module.
+respawnTemplatesEast[] = {"Base"};					//Sets respawn type for this specific side. "Base" works with map markers that use respawn_east. "MenuPosition" works with the respawn module.
+respawnTemplatesGuer[] = {"Base"};					//Sets respawn type for this specific side. "Base" works with map markers that use respawn_guerrila. "MenuPosition" works with the respawn module.
+respawnTemplatesCiv[] = {"Base"};					//Sets respawn type for this specific side. "Base" works with map markers that use respawn_civilian. "MenuPosition" works with the respawn module.
+
+//Respawn parameters	*Note that spawning without respawning first will trigger the script that deletes gear, and will not load any gear as the "onPlayedKilled" hasn't been called.
+
+respawnOnStart = -1; 								//-1 = Spawn at eden-pos incl EDEN loadout, 0 = Spawn at eden-pos and run respawn script*, 1 = Respawn & choose respawn location
+disabledAI = 1;										//Disables AI being put into player entities
+aiKills  = 1;										//Stops AI from getting "kills"
+
+enableDebugConsole = 1;								//0 =  Default Behaviour (Only in 3den), 1 = Available in MP for Logged Admin, 2 = Everyone
+
+allowProfileGlasses = 0;							//When set to 0 will stop glasses set in player profile from being added to player's gear
+
+//Mission Loading
+
+author = "Eagle";									//Set Author Name
+onLoadName = "Portsmouth, England";					//Set Mission Name. Personally I do "Area Name, Location Name"
+onLoadMission = "Operation Intrepid IV";			//Set Mission Description
+loadScreen = "Images\Loadscreen.paa";				//Set Mission Loading Screen Image (Replace with your own image if needed (Or you can ask Eagle to do this for you!)) (Max Image Size = 1024x512 Pxls) 
+
+//Mission Parameters
+// These are only useful for the server browser. Though setting maxPlayers to be under the slotCount may cause issues. 
+class Header		
+{
+	gameType =  Coop;								//Set Game type
+	minPlayers =  1;								//Set minimum number of players the mission supports
+	maxPlayers = 42;								//Set maximum number of players the mission supports
+};
+
+// You can delete the Example.ogg file, its just there to show how CfgMusic works; make sure you delete/edit the Example entry too!
+class CfgMusic
+{
+	class Example // Classname, MUST be all one word. No spaces. Underscores are fine. 
+	{
+		name = "Example Music"; // Name of the music, can have spaces.
+		sound[] = {"Music\Example.ogg", db+0, 1.0}; // filepath relative to mission folder. MUST be .ogg! // You can change the volumne by editing the 'db+0', specicially the +0, ex db+10
+		titles[] = {0,""}; // Leave as is. 
+	};
+};
