@@ -4,6 +4,8 @@
 respawn = "BASE";									//Sets Respawn Location (https://community.bistudio.com/wiki/Arma_3_Respawn)
 respawnDelay = 5;									//Sets Respawn Delay Time
 respawnVehicleDelay = 30;							//Sets Vehicle Respawn Delay Time (If Vehicle Respawn Module is being used)
+
+// Templates can be combined ex "Base", "Tickets" - https://community.bistudio.com/wiki/Arma_3:_Respawn#Respawn_Templates
 respawnTemplatesWest[] = {"Base"};					//Sets respawn type for this specific side. "Base" works with map markers that use respawn_west. "MenuPosition" works with the respawn module.
 respawnTemplatesEast[] = {"Base"};					//Sets respawn type for this specific side. "Base" works with map markers that use respawn_east. "MenuPosition" works with the respawn module.
 respawnTemplatesGuer[] = {"Base"};					//Sets respawn type for this specific side. "Base" works with map markers that use respawn_guerrila. "MenuPosition" works with the respawn module.
@@ -33,6 +35,60 @@ class Header
 	gameType =  Coop;								//Set Game type
 	minPlayers =  1;								//Set minimum number of players the mission supports
 	maxPlayers = 42;								//Set maximum number of players the mission supports
+};
+
+//Control Chat - https://community.bistudio.com/wiki/Description.ext#disableChannels
+disableChannels[] = 
+{
+	{
+		0, 			// Channel ID: Global
+		true, 		// is text chat not allowed?
+		true, 		// is voice chat not allowed?
+		true, 		// is map marker placement not allowed?
+		true		// is drawing on the map not allowed?
+	},
+	{
+		1, 			// Channel ID: Side
+		true, 		// is text chat not allowed?
+		true, 		// is voice chat not allowed?
+		false, 		// is map marker placement not allowed?
+		false		// is drawing on the map not allowed?
+	},
+	{
+		2, 			// Channel ID: Command
+		true, 		// is text chat not allowed?
+		true, 		// is voice chat not allowed?
+		true, 		// is map marker placement not allowed?
+		true		// is drawing on the map not allowed?
+	},
+	{
+		3, 			// Channel ID: Group
+		false, 		// is text chat not allowed?
+		true, 		// is voice chat not allowed?
+		false, 		// is map marker placement not allowed?
+		false		// is drawing on the map not allowed?
+	},
+	{
+		4, 			// Channel ID: Vehicle
+		false, 		// is text chat not allowed?
+		true, 		// is voice chat not allowed?
+		false, 		// is map marker placement not allowed?
+		false		// is drawing on the map not allowed?
+	},
+	{
+		5, 			// Channel ID: Direct
+		true, 		// is text chat not allowed?
+		true, 		// is voice chat not allowed?
+		true, 		// is map marker placement not allowed?
+		true		// is drawing on the map not allowed?
+	},
+	{
+		6, 			// Channel ID: System
+		true, 		// is text chat not allowed?
+		true, 		// is voice chat not allowed?
+		true, 		// is map marker placement not allowed?
+		true		// is drawing on the map not allowed?
+	}
 };
 
 // You can delete the Example.ogg file, its just there to show how CfgMusic works; make sure you delete/edit the Example entry too!
