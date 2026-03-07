@@ -7,11 +7,11 @@
 	//if you have multiple arsenals, you must call this script for each of them.
 //
 
-#include "DO_NOT_EDIT.hpp"
+#include "DO_NOT_EDIT\playerRole.hpp"
 
-#include "DO_NOT_EDIT_PREMADES.hpp"
+#include "DO_NOT_EDIT\PremadeArrays.hpp"
 
-private _CMD_BscAIO = _CMD_BscMedical + _CMD_BasicItems + _CMD_BallisticMasks + _CMD_Grenades + _CMD_TFAR
+private _CMD_BscAIO = _CMD_BscMedical + _CMD_BasicItems + _CMD_BallisticMasks + _CMD_Grenades + _CMD_TFAR;
 
 /* 
  	// These are premade lists which contain items that EVERY mission should include, aka these are basic items. 
@@ -42,7 +42,7 @@ switch (_role) do {
 
 case "Command": {
 		systemChat "Arsenal Role: Command";
-		[_box, _CMD_BscAIO + _CMD_AdvMedical [ 
+		[_box, _CMD_BscAIO + _CMD_AdvMedical + [ 
 
 			// Insert Command Loadout here, below this line
 			//Example:"rhs_weap_ak74n_gp25","ACE_M26_Clacker"
@@ -93,7 +93,7 @@ case "Marksman": {
 
 case "EOD": {
 		systemChat "Arsenal Role: EOD";
-		[_box, _CMD_BscAIO + _CMD_Explosives [
+		[_box, _CMD_BscAIO + _CMD_Explosives + [
 
 			// Insert Engineer Loadout here, below this line
 

@@ -2,6 +2,9 @@ _index = player createDiarySubject ["CommandMain","Unit Information"];
 _index = player createDiarySubject ["CommandSOPs","SOPs"];
 _index = player createDiarySubject ["CommandHaven","Haven"];
 
+// References
+	// <img image='a3\ui_f\data\igui\cfg\actions\obsolete\ui_action_gear_ca.paa'></img>
+
 // Note that these entries are added in the REVERSE order they appear in this file. 
 
 // THIS SHOULD ALWAYS BE AT THE BOTTOM OF THE LIST

@@ -16,4 +16,4 @@ player setVariable["lastLoadout", getUnitLoadout player];
 
 // Example: [ArsenalVariableName] execVM "arsenalbyrole.sqf";
 
-[arsenal_1] execVM "arsenalbyrole.sqf";
+[arsenal_1] execVM "scripts\arsenalbyrole.sqf";
