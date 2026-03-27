@@ -565,3 +565,58 @@ class CfgWeapons
 		hiddenSelectionsTextures[]={"Command_Master\AOT\CommandData\Data\Hunter.paa"};
 	};
 };
+
+class CfgGlasses
+{
+	class G_Balaclava_blk;
+	class AOT_FaceMask_base: G_Balaclava_blk
+	{
+		author="Facel";
+		displayName="Ballistic Mask";
+		scope=0;
+		model="Command_Master\AOT\cmd_aot_mask_face.p3d";
+		picture="Command_Master\AOT\UI\gear_aot_mask_01_x_ca";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		ace_hearing_protection=0.20;
+		ace_hearing_lowerVolume=0.20;
+		ACE_Color[]={0,0,0};
+		ACE_TintAmount=0;
+	};
+	class AOT_FaceMask_NoDamage_base: AOT_FaceMask_base
+	{
+		displayName="Ballistic Mask (0% Damaged)";
+		hiddenSelectionsMaterials[]=
+		{
+			"Command_Master\AOT\data\aot_no_damage.rvmat"
+		};
+	};
+	class AOT_FaceMask_SlightDamage_base: AOT_FaceMask_base
+	{
+		displayName="Ballistic Mask (25% Damaged)";
+		hiddenSelectionsMaterials[]=
+		{
+			"Command_Master\AOT\data\aot_slight_damage.rvmat"
+		};
+	};
+	class AOT_FaceMask_HeavyDamage_base: AOT_FaceMask_base
+	{
+		displayName="Ballistic Mask (40% Damaged)";
+		hiddenSelectionsMaterials[]=
+		{
+			"Command_Master\AOT\data\aot_heavy_damage.rvmat"
+		};
+	};
+	
+// AOT Originals	
+	class AOT_FaceMask_black: AOT_FaceMask_NoDamage_base
+	{
+		displayName="Ballistic Mask - Black (0% Damaged)";
+		scope=2;
+		scopeArsenal=2;
+		picture="Command_Master\AOT\UI\gear_aot_mask_01_x_ca";
+		hiddenSelectionsTextures[]={"Command_Master\AOT\data\customtextures\aot_mask_01_co.paa"};
+	};
+};
