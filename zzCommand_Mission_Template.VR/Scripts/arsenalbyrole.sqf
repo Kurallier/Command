@@ -36,6 +36,21 @@ private _CMD_BscAIO = _CMD_BscMedical + _CMD_BasicItems + _CMD_BallisticMasks + 
 //------------ Set this to true to have pilots and crewman share the same equipment ------------------
 _crewPilotShareEquip=false;
 
+private _CMD_MssEquip=
+[
+	// Insert string of mission-specific Uniform/Vest/Backpack classnames here (everyone has access to these) (ex: )
+];
+
+private _CMD_MssAmmo=
+[
+	// Insert string of mission-specific ammo-mags/supply classnames here (everyone has access to these) (ex: )
+];
+
+private _CMD_MssRfn=
+[
+	// Insert string of mission-specific rifles/guns classnames here (everyone has access to these) (ex: )
+];
+
 //--------------- Put all role specific equipment below --------------------------
 //NOTE: You can make a loadout and then press the "Export" button to make a specific loadout.
 switch (_role) do {
