@@ -81,13 +81,6 @@ disableChannels[] =
 		true, 		// is voice chat not allowed?
 		true, 		// is map marker placement not allowed?
 		true		// is drawing on the map not allowed?
-	},
-	{
-		6, 			// Channel ID: System
-		true, 		// is text chat not allowed?
-		true, 		// is voice chat not allowed?
-		true, 		// is map marker placement not allowed?
-		true		// is drawing on the map not allowed?
 	}
 };
 
