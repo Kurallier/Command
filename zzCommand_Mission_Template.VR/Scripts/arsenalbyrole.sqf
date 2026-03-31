@@ -5,6 +5,10 @@
 	//NOTE:
 	//This script will only apply to the object with the variable name,
 	//if you have multiple arsenals, you must call this script for each of them.
+	
+	//When applying this script to an arsenal, it must have no whitelisted/blacklisted items. 
+	//It must be completely empty for this script to work. 
+	//Actual items in the inventory the arsenal should be fine. 
 //
 
 #include "DO_NOT_EDIT\playerRole.hpp"
