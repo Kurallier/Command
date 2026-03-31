@@ -4,7 +4,8 @@ class CfgPatches
 	{
 		units[]=
 		{
-			"Command_AH6M_Empty"
+			"Command_AH6M",
+			"Command_MH6M"
 		};
 		weapons[]={};
 		requiredAddons[]=
@@ -23,7 +24,23 @@ class CfgPatches
 
 class CfgVehicles
 {
-	class RHS_MELB_AH6M;
+	class RHS_MELB_base;
+	class CE_MELB_base: RHS_MELB_base
+	{
+		class AnimationSources;
+	};
+	class RHS_MELB_AH6M: CE_MELB_base
+	{
+		class AnimationSources: AnimationSources
+		{
+			class Addcrosshair
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+			};
+		};
+	};
 	class Command_AH6M: RHS_MELB_AH6M
 	{
 		displayName="AH-6M Little Bird - Empty (Hammerhead)";
@@ -38,11 +55,19 @@ class CfgVehicles
 			"CE_RHS\CE_RHSUSAF_Vehicles\Bro_MELB_Skins\hammerhead\HammerHeadPrime.paa",
 			"rhsusf\addons\rhsusf_melb\data\decals\SN\blank_ca.paa"
 		};
-		class TextureSources
-		{};
+		class AnimationSources: AnimationSources
+		{
+			class Addcrosshair
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+			};
+		};
 	};
 
-	class RHS_MELB_MH6M;
+	class RHS_MELB_MH6M: CE_MELB_base
+	{};
 	class Command_MH6M: RHS_MELB_MH6M
 	{
 		displayName="MH-6M Little Bird (Hammerhead)";
@@ -57,7 +82,14 @@ class CfgVehicles
 			"CE_RHS\CE_RHSUSAF_Vehicles\Bro_MELB_Skins\hammerhead\HammerHeadPrime.paa",
 			"rhsusf\addons\rhsusf_melb\data\decals\SN\blank_ca.paa"
 		};
-		class TextureSources
-		{};
+		class AnimationSources: AnimationSources
+		{
+			class Addcrosshair
+			{
+				source="user";
+				animPeriod=1;
+				initPhase=0;
+			};
+		};
 	};
 };
